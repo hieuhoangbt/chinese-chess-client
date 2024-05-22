@@ -1,0 +1,35 @@
+.piece {
+  width: 90%;
+  height: 90%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.piece:hover {
+  transform: scale(1.1);
+}
+
+.player-1 {
+  background-color: red;
+  color: white;
+}
+
+.player-2 {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  background-color: gray;
+  color: transparent;
+}
+
+.selected {
+  border: 2px solid yellow;
+}

@@ -1,0 +1,84 @@
+body {
+  background-image: url('../assets/bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+}
+
+.room-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100vh; /* Chiều cao toàn màn hình */
+  box-sizing: border-box;
+}
+
+.create-room-button {
+  background-color: #8b4513; /* Màu nút tông màu vân gỗ */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.create-room-button:hover {
+  background-color: #a0522d; /* Màu nút khi hover */
+}
+
+.room-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px; /* Đặt giới hạn chiều rộng để dễ quản lý */
+}
+
+.room-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5a3d2b; /* Màu nền của mỗi phòng */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  width: 120px; /* Kích thước cố định cho mỗi bàn chơi */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.room-item:hover {
+  transform: scale(1.1); /* Hiệu ứng zoom khi hover */
+}
+
+.room-icon {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+}
+
+.player-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.player-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.player-icon.hidden {
+  visibility: hidden;
+}
